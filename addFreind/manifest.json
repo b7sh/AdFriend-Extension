@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "AdFriend",
+    "version": "1.0",
+    "description": "Replaces ads with motivational widgets",
+    "permissions": ["activeTab", "storage"],
+    "host_permissions": ["<all_urls>"],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icon-16.png",
+        "48": "icon-48.png",
+        "128": "icon-128.png"
+      }
+    }
+  }
